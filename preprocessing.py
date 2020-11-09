@@ -100,17 +100,17 @@ class ban_processing:
         resultwords = [word for word in querywords if word not in stopwords]
         result = ' '.join(resultwords)
         return result
-    
+
     def add_stopword(self,text):
         stopwords = []
         for i in open("bn_nlp/stop_word.txt", "r"):
             i = i.rstrip("\n")
             stopwords.append(i)
         stopwords.append(text)
-        stopwords=list(set(stopwords))
         file=open("bn_nlp/stop_word.txt", "wb")
         for i in stopwords:
-            file.write(i.encode('utf-8'))
+            i=i+'\n'
+            file.write(i.encode('utf8'))
         file.close()
 
     def last_num_remove(self,word):
