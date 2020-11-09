@@ -1,6 +1,6 @@
 import numpy as np
 from scipy import spatial
-path = "word2vec_model.txt"
+path = "bn_nlp/word2vec_model.txt"
 embeddings_dict = {}
 class word2vec:
     def __init__(self):
