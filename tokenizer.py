@@ -71,6 +71,7 @@ class sentenceTokenizer:
             if len(bp.dust_removal(i))==0:
                 continue
             i=bp.punctuation_remove(i)
+            i=bp.word_normalize(i)
             temp_tokens.append(i)
         return temp_tokens
 
