@@ -1,5 +1,5 @@
-from tokenizer import wordTokenizer,sentenceTokenizer
-from word2vec_embedding import word2vec
+from bn_nlp.tokenizer import wordTokenizer,sentenceTokenizer
+from bn_nlp.word2vec_embedding import word2vec
 import math
 
 w2v = word2vec()
