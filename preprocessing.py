@@ -93,7 +93,7 @@ class ban_processing:
 
     def stop_word_remove(self,text):
         stopwords = []
-        for i in open("stop_word.txt", "r"):
+        for i in open("bn_nlp/stop_word.txt", "r"):
             i = i.rstrip("\n")
             stopwords.append(i)
         querywords = text.split()
