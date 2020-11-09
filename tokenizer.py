@@ -1,4 +1,4 @@
-from preprocessing import ban_processing,StaticArray
+from bn_nlp.preprocessing import ban_processing,StaticArray
 bp=ban_processing()
 class wordTokenizer:
     def basic_tokenizer(self,sent):
