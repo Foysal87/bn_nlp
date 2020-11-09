@@ -8,7 +8,7 @@ word_dict={}
 bp=ban_processing()
 class stemmerOP:
     def __init__(self):
-        for word in open("word2.txt", "r"):
+        for word in open("bn_nlp/word2.txt", "r"):
             word=word.replace('\n','')
             word_vec.append(word)
             word_dict[word]=1
