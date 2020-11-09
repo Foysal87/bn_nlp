@@ -1,5 +1,5 @@
-from preprocessing import ban_processing,StaticArray
-from tokenizer import wordTokenizer
+from bn_nlp.preprocessing import ban_processing,StaticArray
+from bn_nlp.tokenizer import wordTokenizer
 from bnltk.stemmer import BanglaStemmer
 bn_stemmer = BanglaStemmer()
 wordtokens=wordTokenizer()
