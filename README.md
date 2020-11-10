@@ -4,21 +4,21 @@ Bangla NLP toolkit.This is version 1.0(many things will add later). You can use 
 ### what will you get here?
 
 * Bangla Preprocessing system
-* Bangla Text Punctuation Remove
-* Bangla Stopword removal
+* Bangla Text **Punctuation** Remove
+* Bangla **Stopword** removal
 * Bangla Dust removal(without bangla character everything will be removed)
 * Bangla word Normalize(Less error form)
 * Bangla 'Bangla word to english equivalent word conversion'
-* Bangla word Sort according to english alphabet
-* Bangla word Sort according to Bangla alphabet
-* Bangla Basic word tokenizer
+* Bangla word **Sort** according to english alphabet
+* Bangla word **Sort** according to Bangla alphabet
+* Bangla Basic word **tokenizer**
 * Bangla normalize word tokenizer
 * Bangla Basic Sentence tokenizer
-* Bangla normalize sentence tokenizer
-* Bangla word checker(word exist)
-* Bangla word Stemmer(extended version of bnltk.stemmer & higher accuracy with word checker)
-* Bangla word2vec embedding(7,00,000+ vocab, 100 Dimension, much accurate,pretrained) @pipilika
-* Bangla sent2sent embedding/similiarty from word2vec
+* Bangla normalize **sentence tokenizer**
+* Bangla word **checker**(word exist)
+* Bangla word **Stemmer**(extended version of bnltk.stemmer & less error form & **higher accuracy** with word checker)
+* Bangla **word2vec** embedding(7,00,000+ vocab, 100 Dimension, much accurate,pretrained) @pipilika
+* Bangla **sent2sent** embedding/similiarty from word2vec
 
 
 ### Required package(python 3.7)
