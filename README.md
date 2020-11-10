@@ -3,22 +3,22 @@ Bangla NLP toolkit.This is version 1.0(many things will add later). You can use 
 
 ### what will you get here?
 
-* Bangla Preprocessing system
-* Bangla Text **Punctuation** Remove
-* Bangla **Stopword** removal
-* Bangla Dust removal(without bangla character everything will be removed)
-* Bangla word Normalize(Less error form)
-* Bangla 'Bangla word to english equivalent word conversion'
-* Bangla word **Sort** according to english alphabet
-* Bangla word **Sort** according to Bangla alphabet
-* Bangla Basic word **tokenizer**
-* Bangla normalize word tokenizer
-* Bangla Basic Sentence tokenizer
-* Bangla normalize **sentence tokenizer**
-* Bangla word **checker**(word exist)
-* Bangla word **Stemmer**(extended version of bnltk.stemmer & less error form & **higher accuracy** with word checker)
-* Bangla **word2vec** embedding(7,00,000+ vocab, 100 Dimension, much accurate,pretrained) @pipilika
-* Bangla **sent2sent** embedding/similiarty from word2vec
+* [Bangla Preprocessing system](https://github.com/Foysal87/bn_nlp)
+* [Bangla Text **Punctuation** Remove](https://github.com/Foysal87/bn_nlp#punctuation-remove)
+* [Bangla **Stopword** removal](https://github.com/Foysal87/bn_nlp#stopword-removal)
+* [Bangla Dust removal](https://github.com/Foysal87/bn_nlp#dust-removal) (without bangla character everything will be removed)
+* [Bangla word Normalize](https://github.com/Foysal87/bn_nlp#word-normalize) (Less error form)
+* [Bangla 'Bangla word to english equivalent word conversion'](https://github.com/Foysal87/bn_nlp#bangla-word-to-english-equivalent-word-conversion)
+* [Bangla word **Sort** according to english alphabet](https://github.com/Foysal87/bn_nlp#bangla-word-sort-according-to-english-alphabet)
+* [Bangla word **Sort** according to Bangla alphabet](https://github.com/Foysal87/bn_nlp#bangla-word-sort-according-to-bangla-alphabet)
+* [Bangla Basic word **tokenizer**](https://github.com/Foysal87/bn_nlp#bangla-basic-word-tokenizer)
+* [Bangla normalize word tokenizer](https://github.com/Foysal87/bn_nlp#bangla-normalize-word-tokenizer)
+* [Bangla Basic Sentence tokenizer](https://github.com/Foysal87/bn_nlp#bangla-basic-sentence-tokenizer)
+* [Bangla normalize **sentence tokenizer**](https://github.com/Foysal87/bn_nlp#bangla-normalize-sentence-tokenizer)
+* [Bangla word **checker**](https://github.com/Foysal87/bn_nlp#bangla-word-checker) (word exist)
+* [Bangla word **Stemmer**](https://github.com/Foysal87/bn_nlp#bangla-word-stemmer)(extended version of bnltk.stemmer & less error form & **higher accuracy** with word checker)
+* [Bangla **word2vec** embedding](https://github.com/Foysal87/bn_nlp#bangla-word2vec-embedding)(7,00,000+ vocab, 100 Dimension, much accurate,pretrained) @pipilika
+* [Bangla **sent2sent** embedding/similiarty](https://github.com/Foysal87/bn_nlp#bangla-sent2sent-embeddingsimiliarty-from-word2vec) from word2vec
 
 
 ### Required package(python 3.7)
