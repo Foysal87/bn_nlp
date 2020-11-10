@@ -22,7 +22,6 @@ Bangla NLP toolkit.This is version 1.0(many things will add later). You can use 
 
 
 ### Required package(python 3.7)
-* bnltk
 * numpy
 * scipy
 
