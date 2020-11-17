@@ -39,7 +39,7 @@ class StaticArray:
         '09BE': 'a', '09B0':'ra','09CB': 'o','0993':'o','09C7': 'e'
     }
     bn_norm={
-        '09C0':'\u09bf','09C2':'\u09c1','09C4':'\u09c3'
+        '09C0':'\u09bf','09C2':'\u09c1','09C4':'\u09c3','09A3':'\u09a8','0988':'\u0987','098A':'\u0989'
     }
 
     bn_serial={
@@ -75,8 +75,8 @@ class ban_processing:
         text = re.sub(punctSeq, " ", text)
         text = re.sub(bangla_fullstop, " ", text)
         text = re.sub(punc, " ", text)
-        text = re.sub('[!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~]', '', text)
-        text=text.replace("\\", "")
+        text = re.sub('[!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~]', ' ', text)
+        text=text.replace("\\", " ")
         return text
 
     def dust_removal(self,word):
@@ -93,13 +93,38 @@ class ban_processing:
 
     def stop_word_remove(self,text):
         stopwords = []
-        for i in open("bn_nlp/stop_word.txt", "r"):
+        for i in open("bn_nlp/dataset/stop_word.txt", "r"):
             i = i.rstrip("\n")
             stopwords.append(i)
         querywords = text.split()
         resultwords = [word for word in querywords if word not in stopwords]
         result = ' '.join(resultwords)
         return result
+
+    def add_stopword(self,text):
+        stopwords = []
+        for i in open("bn_nlp/dataset/stop_word.txt", "r"):
+            i = i.rstrip("\n")
+            stopwords.append(i)
+        stopwords.append(text)
+        file=open("bn_nlp/dataset/stop_word.txt", "wb")
+        for i in stopwords:
+            i=i+'\n'
+            file.write(i.encode('utf8'))
+        file.close()
+
+    def remove_stopword(selfself,text):
+        stopwords = []
+        for i in open("bn_nlp/dataset/stop_word.txt", "r"):
+            i = i.rstrip("\n")
+            stopwords.append(i)
+        file = open("bn_nlp/dataset/stop_word.txt", "wb")
+        for i in stopwords:
+            if i==text:
+                continue
+            i = i + '\n'
+            file.write(i.encode('utf8'))
+        file.close()
 
     def last_num_remove(self,word):
         if len(word)==0:
@@ -122,7 +147,6 @@ class ban_processing:
                 continue
             break
         return word
-
 
     def word_normalize(self,word):
         s = ""

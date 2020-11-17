@@ -1,6 +1,6 @@
 import numpy as np
 from scipy import spatial
-path = "bn_nlp/word2vec_model.txt"
+path = "bn_nlp/dataset/word2vec_model.txt"
 embeddings_dict = {}
 class word2vec:
     def __init__(self):
@@ -29,7 +29,6 @@ class word2vec:
             vec.append(item)
             return vec
         result=sorted(embeddings_dict.keys(), key=lambda word: spatial.distance.euclidean(embeddings_dict[word], embeddings_dict[item]))
-
         j=0
         for i in result:
            if j==n:

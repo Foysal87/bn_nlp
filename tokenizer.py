@@ -6,8 +6,6 @@ class wordTokenizer:
         tokens = sent.split()
         temp_tokens = []
         for i in tokens:
-            if len(bp.dust_removal(i)) == 0:
-                continue
             temp_tokens.append(i)
         return temp_tokens
 
@@ -71,6 +69,7 @@ class sentenceTokenizer:
             if len(bp.dust_removal(i))==0:
                 continue
             i=bp.punctuation_remove(i)
+            i=bp.word_normalize(i)
             temp_tokens.append(i)
         return temp_tokens
 
