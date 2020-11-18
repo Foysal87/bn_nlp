@@ -1,5 +1,5 @@
 # bn_nlp
-Bangla NLP toolkit.This is version 1.0(many things will add later). You can use it now.
+Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper and higer data). You can use it now.
 
 ### what will you get here?
 
@@ -19,7 +19,8 @@ Bangla NLP toolkit.This is version 1.0(many things will add later). You can use 
 * [Bangla word **Stemmer**](https://github.com/Foysal87/bn_nlp#bangla-word-stemmer)(extended version of bnltk.stemmer & less error form & **higher accuracy** with word checker)
 * [Bangla **word2vec** embedding](https://github.com/Foysal87/bn_nlp#bangla-word2vec-embedding)(7,00,000+ vocab, 100 Dimension, much accurate,pretrained) @pipilika
 * [Bangla **sent2sent** embedding/similiarty](https://github.com/Foysal87/bn_nlp#bangla-sent2sent-embeddingsimiliarty-from-word2vec) from word2vec
-
+* Bangla **Pos tagger**
+* Bangla wiki and database related **NER**
 
 ### Required package(python 3.7)
 * numpy
