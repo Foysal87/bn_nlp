@@ -35,7 +35,7 @@ Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper an
 * Bangla word2Vec embedding(7,25,061)
 * Bangla NER tag(1,44,373++)
 
-** '++' sign means data will increase later **
+**'++' sign means data will increase later**
 
 ### Punctuation Remove
 ```py
