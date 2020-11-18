@@ -1,5 +1,5 @@
 # bn_nlp
-Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper and higer data). You can use it now.
+Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper and more data). You can use it now.
 
 ### what will you get here?
 
