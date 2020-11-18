@@ -26,6 +26,17 @@ Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper an
 * numpy
 * scipy
 
+### Dataset
+* Bangla word Count(6,15,621++)
+* Bangla root Word count (83,665)
+* Bangla Stop Word(356++)
+* Bangla Suffix (100++)
+* Bangla root word Pos­tag count(1,33,973++)
+* Bangla word2Vec embedding(7,25,061)
+* Bangla NER tag(1,44,373++)
+
+** '++' sign means data will increase later **
+
 ### Punctuation Remove
 ```py
 from bn_nlp.preprocessing import ban_processing
@@ -208,7 +219,7 @@ print(stemmer.stemSent(text))
 * [google Drive](https://drive.google.com/file/d/1aj8knLQ8H7O5nsb7wwNjq1-dQVLfEeA3/view?usp=sharing)
 * [Pipilika Developer site](https://devlopers.pipilika.com/?fbclid=IwAR39VXgkWLoofm8Z03pyloPZTRV3ub7EAH9gRFM2UCgxIPiJJvzR1d_NPW0)
 
-After downloading, paste this file in bn_nlp directory.
+After downloading, paste this file in bn_nlp/dataset directory.
 ```py
 from bn_nlp.word2vec_embedding import word2vec
 w2v=word2vec()
