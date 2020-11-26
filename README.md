@@ -1,5 +1,5 @@
 # bn_nlp
-Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper and more data). You can use it now.
+Bangla NLP toolkit. This toolkit was fully made by dataset and pretrained. This is version 2.0(Summarizer and Paper will come next version). You can use it now.
 
 ### what will you get here?
 
@@ -15,12 +15,12 @@ Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper an
 * [Bangla normalize word tokenizer](https://github.com/Foysal87/bn_nlp#bangla-normalize-word-tokenizer)
 * [Bangla Basic Sentence tokenizer](https://github.com/Foysal87/bn_nlp#bangla-basic-sentence-tokenizer)
 * [Bangla normalize **sentence tokenizer**](https://github.com/Foysal87/bn_nlp#bangla-normalize-sentence-tokenizer)
-* [Bangla word **checker**](https://github.com/Foysal87/bn_nlp#bangla-word-checker) (word exist)
-* [Bangla word **Stemmer**](https://github.com/Foysal87/bn_nlp#bangla-word-stemmer)(**higher accuracy**)
-* [Bangla **word2vec** embedding](https://github.com/Foysal87/bn_nlp#bangla-word2vec-embedding)(7,00,000+ vocab, 100 Dimension, much accurate,pretrained) @pipilika
+* [Bangla word **checker**](https://github.com/Foysal87/bn_nlp#bangla-word-checker) word exist
+* [Bangla word **Stemmer**](https://github.com/Foysal87/bn_nlp#bangla-word-stemmer) **higher accuracy**
+* [Bangla **word2vec** embedding](https://github.com/Foysal87/bn_nlp#bangla-word2vec-embedding) 7,00,000+ vocab, 100 Dimension, much accurate,pretrained @pipilika
 * [Bangla **sent2sent** embedding/similiarty](https://github.com/Foysal87/bn_nlp#bangla-sent2sent-embeddingsimiliarty-from-word2vec) from word2vec
 * Bangla **Pos tagger**
-* Bangla wiki and database related **NER**
+* Bangla database related **NER**
 
 ### Required package(python 3.7)
 * numpy
@@ -31,11 +31,13 @@ Bangla NLP toolkit.This is version 2.0(Another Version will come with a paper an
 * Bangla root Word count (83,665)
 * Bangla Stop Word(356++)
 * Bangla Suffix (100++)
-* Bangla root word Pos­tag count(1,33,973++)
+* Bangla root word Postag count(1,33,973++)
 * Bangla word2Vec embedding(7,25,061)
-* Bangla NER tag(1,44,373++)
+* Bangla NER tag(4,08,837++)
 
-**'++' sign means data will increase later**
+**'++' sign means data will increase later** \
+**Must Download Word2Vec from google drive or it will make error**
+
 
 ### Punctuation Remove
 ```py
@@ -219,7 +221,7 @@ print(stemmer.stemSent(text))
 * [google Drive](https://drive.google.com/file/d/1aj8knLQ8H7O5nsb7wwNjq1-dQVLfEeA3/view?usp=sharing)
 * [Pipilika Developer site](https://devlopers.pipilika.com/?fbclid=IwAR39VXgkWLoofm8Z03pyloPZTRV3ub7EAH9gRFM2UCgxIPiJJvzR1d_NPW0)
 
-After downloading, paste this file in bn_nlp/dataset directory.
+After downloading, paste this file in bn_nlp directory.
 ```py
 from bn_nlp.word2vec_embedding import word2vec
 w2v=word2vec()
@@ -249,6 +251,32 @@ print(s2s.dist(text1,text2))
 **output**
 ```
 37.503074645996094
+```
+
+### Bangla Word Postag
+```py
+from bn_nlp.posTag import postag
+tagger=postag()
+text="সড়কের ‘কারণে’ বৃহস্পতিবার দেখা গেল পুরো এলাকা ‘হাবুডুবু’ খাচ্ছে অথৈ পানিতে।"
+print(tagger.tag(text))
+```
+
+**Output**
+```
+[('সড়ক', 'noun'), ('কারণে', 'preposition'), ('বৃহস্পতিবার', 'noun'), ('দেখা', 'verb'), ('গেল', 'verb'), ('পুরো', 'verb'), ('এলাকা', 'noun'), ('হাবুডুবু', 'noun'), ('খাচ্ছে', 'verb'), ('অথৈ', 'adverb'), ('পানি', 'noun')]
+```
+
+### Bangla Word NER
+Good accuracy for single entity.
+```py
+from bn_nlp.NER import UncustomizeNER
+ner=UncustomizeNER()
+text="আর্জেন্টিনা দক্ষিণ আমেরিকার একটি রাষ্ট্র। বুয়েনোস আইরেস দেশটির বৃহত্তম শহর ও রাজধানী।"
+print(ner.NER(text))
+```
+**output**
+```
+{'আর্জেন্টিনা': 'LOC', 'দক্ষিণ আমেরিকার': 'LOC', 'রাষ্ট্র': 'LOC', 'বুয়েনোস আইরেস': 'PER', 'দেশটির': 'LOC', 'বৃহত্তম শহর': 'LOC'}
 ```
 
 **Thank you** <br/>

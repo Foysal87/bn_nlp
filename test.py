@@ -1,11 +1,11 @@
-from bn_nlp.preprocessing import ban_processing
-from bn_nlp.tokenizer import wordTokenizer
-from bn_nlp.tokenizer import sentenceTokenizer
-from bn_nlp.Stemmer import stemmerOP
-from bn_nlp.word2vec_embedding import word2vec
-from bn_nlp.sent2sent_embedding import sent2sent
-from bn_nlp.posTag import postag
-from bn_nlp.NER import UncustomizeNER
+from preprocessing import ban_processing
+from tokenizer import wordTokenizer
+from tokenizer import sentenceTokenizer
+from Stemmer import stemmerOP
+from word2vec_embedding import word2vec
+from sent2sent_embedding import sent2sent
+from posTag import postag
+from NER import UncustomizeNER
 bp=ban_processing()
 # punctuation Remove
 text="সড়কের ‘কারণে’ বৃহস্পতিবার দেখা গেল পুরো এলাকা ‘হাবুডুবু’ খাচ্ছে অথৈ পানিতে।"
@@ -91,6 +91,6 @@ print(tagger.tag(text))
 
 #NER
 ner=UncustomizeNER()
-text="বাংলাদেশ দক্ষিণ এশিয়ার একটি রাষ্ট্র। দেশটির উত্তর, পূর্ব ও পশ্চিম সীমানায় ভারত ও দক্ষিণ-পূর্ব সীমানায় মায়ানমার"
+text="আর্জেন্টিনা দক্ষিণ আমেরিকার একটি রাষ্ট্র। বুয়েনোস আইরেস দেশটির বৃহত্তম শহর ও রাজধানী।"
 print(ner.NER(text))
 
