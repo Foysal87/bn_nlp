@@ -1,6 +1,8 @@
 # bn_nlp
 Bangla NLP toolkit. This toolkit was fully made by dataset and pretrained. This is version 2.0(Summarizer and Paper will come next version). You can use it now.
 
+**This repository was made Public at 29,jan 2020**
+
 ### what will you get here?
 
 * [Bangla Preprocessing system](https://github.com/Foysal87/bn_nlp)
