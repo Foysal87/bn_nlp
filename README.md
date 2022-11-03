@@ -220,7 +220,7 @@ print(stemmer.stemSent(text))
 
 ### Bangla word2vec embedding
 **pretrained word2vec embedding download link**: <br/>
-* [google Drive](https://drive.google.com/file/d/1aj8knLQ8H7O5nsb7wwNjq1-dQVLfEeA3/view?usp=sharing)
+* [google Drive](https://drive.google.com/file/d/1S9liIMbxSQNzs7xF8GmvNjRbjN8iWKpF/view?usp=sharing)
 * [Pipilika Developer site](https://devlopers.pipilika.com/?fbclid=IwAR39VXgkWLoofm8Z03pyloPZTRV3ub7EAH9gRFM2UCgxIPiJJvzR1d_NPW0)
 
 After downloading, paste this file in bn_nlp directory.
